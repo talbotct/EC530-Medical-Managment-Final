@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Dashboard</title>
+    </head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <label>
+                        <h1>{{ uid }}'s Dashboard </h1>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href = "logout"> <button>Logout </button> </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href = "signup"> <button>Register </button> </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href = "login"> <button>Log-in </button> </a>
+                </td>
+            </tr>
+        </table>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <input type = "text" name = "chatPartner" placeholder = "Enter chat partner">
+                    </td>
+                    <td>
+                        <a href = "/connectUser"><button class = "btn"><h3>Connect to User </h3></button></a>
+                        <div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <h3>Chat Window </h3>
+                        <h3>{{chatID}} </h3>
+                        <div>
+                            <table>
+                                <tr>
+                                    <td>
+                                        Sender:
+                                    </td>
+                                    <td>
+                                        Message
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <form action = "{{url_for('sendMsg', userID = uid)}}">
+                <table>
+                    <tr>
+                        <td>
+                            <input type = "text" name = "typedMsg" placeholder = "Enter message...">
+                        </td>
+                        <td>
+                            <button class = "send">Send </button>
+                        </td>               
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
