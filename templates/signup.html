@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <title>Sign Up</title>
+    </head>
+<body>
+    <label>
+        <h1>Sign up</h1>
+        Go back <a href = "home">Home </a>
+    </label>
+    <form action = "signup" method = "POST"></formaction>
+        <table>
+            <tr>
+                <td>
+                    <label>Email: </label>
+                </td>
+                <td>
+                    <input type = "email" name = "email" placeholder = "Email"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Username: </label>
+                </td>
+                <td>
+                    <input type = "text" name = "username" placeholder = "Username"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Password: </label>
+                </td>
+                <td>
+                    <input type = "password" name = "password" placeholder = "Password"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Full Name: </label>
+                </td>
+                <td>
+                    <input type = "text" name = "Full Name" placeholder = "Full Name"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Date of Birth: </label>
+                </td>
+                <td>
+                    <input type = "date" name = "DOB" placeholder = "Date of Birth"/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Role: </label>
+                    <select name="role" id="role">
+                        <option value="Doctor">Doctor</option>
+                        <option value="Nurse">Nurse</option>
+                        <option value="Patient">Patient</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Are you an Admin: </label>
+                    <select name="admin" id="admin">
+                        <option value="Not an Admin">Not an Admin</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </td>
+            </tr>
+                <td>
+                    <a href = "dashboard"> <button type = "submit">Register </button> </a>
+                </td>
+            </tr>
+        </table>
+    </form>
+    Already signed up? <a href = "login">Login </a>
+</body>
+</html>
