@@ -1,0 +1,10 @@
+flask
+flask_restful
+Flask-SocketIO
+flask_session
+google.cloud
+google-cloud-firestore
+python-socketio
+eventlet
+requests
+requests.auth

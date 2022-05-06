@@ -1,0 +1,89 @@
+devices =  {"deviceName": "pfizer01",
+             "deviceType": "HeartMonitor",
+             "manufacturer": "pfizer",
+             "hospital": "BU",
+            "patientName": "Bob",
+            "results": "78"
+             },
+    
+         2:  {"deviceName": "moderna01",
+             "deviceType": "ekg",
+             "manufacturer": "moderna",
+             "hospital": "BU",
+             "patientName": "Tim",
+             "results": "44"
+             },
+    
+         3:  {"deviceName": "JJ01",
+             "deviceType": "BloodPressure",
+             "manufacturer": "Johnson&Johnson",
+             "hospital": "BU",
+             "patientName": "",
+             "results": ""
+             }
+}
+
+    users = {
+        1: {
+            "name": "Test Name",
+            "role": "doctor",
+            "admin": "Admin",
+            "DOB": "2/22/1988",
+            "email": "eesdes@jfi.com",
+            "password": "fddjh3",
+            "doctors": "",
+            "nurses": "",
+            "patients": "Kim Hope"
+            },
+    
+        2:  {
+            "name": "Joe Bob",
+            "role": "nurse",
+            "admin": "Admin",
+            "DOB": "3/1/1911",
+            "email": "ggg@erqwe.com",
+            "password": "sdfvasdf",
+            "doctors": "",
+            "nurses": "",
+            "patients": "Kim Hope"
+            },
+    
+        3:  {
+            "name": "Kim Hope",
+            "role": "doctor",
+            "admin": "Not an Admin",
+            "DOB": "12/12/2004",
+            "email": "re@jweeqi.com",
+            "password": "sdadafet",
+            "doctors": "Test Name",
+            "nurses": "Joe Bob",
+            "patients": ""
+            },
+    
+    }
+
+    chats = {
+        1: {"source": "bob",
+            "dest": "Phil",
+            "sessionID": "3",
+            "msgID": "33132",
+            "timestamp": "10:11",
+            "msgContent": "hello!",
+            },
+    
+        2: {"source": "Jon",
+            "dest": "tim",
+            "sessionID": "543",
+            "msgID": "33135652",
+            "timestamp": "8:34",
+            "msgContent": "I am going to the ER",
+            },
+    
+        3: {"source": "Kim",
+            "dest": "Bruce",
+            "sessionID": "22",
+            "msgID": "313543214",
+            "timestamp": "15:31",
+            "msgContent": "Where can I pick up my perscription",
+            }
+    }
