@@ -26,6 +26,7 @@ devices =  {"deviceName": "pfizer01",
     users = {
         1: {
             "name": "Test Name",
+            "username": "QWERTY",
             "role": "doctor",
             "admin": "Admin",
             "DOB": "2/22/1988",
@@ -38,6 +39,7 @@ devices =  {"deviceName": "pfizer01",
     
         2:  {
             "name": "Joe Bob",
+            "username": "TALLY",
             "role": "nurse",
             "admin": "Admin",
             "DOB": "3/1/1911",
@@ -50,6 +52,7 @@ devices =  {"deviceName": "pfizer01",
     
         3:  {
             "name": "Kim Hope",
+            "username": "Botter",
             "role": "doctor",
             "admin": "Not an Admin",
             "DOB": "12/12/2004",

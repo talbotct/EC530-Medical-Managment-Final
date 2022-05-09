@@ -11,6 +11,7 @@ userRef = db.collection(u'users')
 
 userDocs = userRef.stream()
 users = {}
+userData = {}
 i = 0
 
 for user in userDocs:
@@ -31,6 +32,7 @@ doc_watch = doc_ref.on_snapshot(on_snapshot)
 
 userPostArgs = reqparse.RequestParser()
 userPostArgs.add_argument("name", type = str, required = True)
+userPostArgs.add_argument("username", type = str, required = True)
 userPostArgs.add_argument("role", type = str, required = True)
 userPostArgs.add_argument("admin", type = str, required = True)
 userPostArgs.add_argument("DOB", type = str, required = True)
@@ -42,6 +44,7 @@ userPostArgs.add_argument("patients", type = str)
 
 userPutArgs = reqparse.RequestParser()
 userPutArgs.add_argument("name", type = str)
+userPutArgs.add_argument("username", type = str)
 userPutArgs.add_argument("role", type = str)
 userPutArgs.add_argument("admin", type = str)
 userPutArgs.add_argument("DOB", type = str)
@@ -76,6 +79,7 @@ class userList(Resource):
 
         users = {
                 "name": args["name"],
+                "username": args["username"],
                 "role": args["role"],
                 "admin": args["admin"],
                 "DOB": args["DOB"],
@@ -93,9 +97,14 @@ class userList(Resource):
 
 class user(Resource):
     #GET
-    def get(self, userID):
+    def get(self, username):
         getDB(db)
-        return users[userID]
+        userData = {}
+        userDocs = userRef.where(u'username', u'==', username).stream()
+        for user in userDocs:
+            userData[user.id] = user.to_dict()
+
+        return userData
 
     #PUT
     def put(self, userID):
@@ -111,6 +120,10 @@ class user(Resource):
                 users[userID]['name'] = (args['name'])
                 holder = userRef.document(userID)
                 holder.update({u'name': args['name']})
+            if(args['username']):
+                users[userID]['username'] = (args['username'])
+                holder = userRef.document(userID)
+                holder.update({u'username': args['username']})
             if(args['role']):
                 users[userID]['role'] = (args['role'])
                 holder = userRef.document(userID)

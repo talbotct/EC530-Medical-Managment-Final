@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+    </head>
+<body>
+    <label>
+        <h1>Chat Rooms</h1>
+    </label>
+    <form action = "chatWindow" method = "POST"></formaction>
+    <table>
+        <tr>
+            <td>
+                <label>User to recieve message:</label>
+            </td>
+            <td>
+                <input type = "text" name = "chatPartner" placeholder = "Chat Partner"/>
+            </td>
+        </tr>
+    </table>
+        <table>
+            <tr>
+                <td>
+                    <label>{{chatPartner}}: {{recievedMsg}}</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>{{source}}: {{sentMsg}}</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type = "text" name = "sentMsg" placeholder = "Enter message..."/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href = "chatWindow"> <button type = "submit">Send </button> </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href = "chatWindow"> <button type = "submit">Refresh </button> </a>
+                </td>
+            </tr>
+        </table>
+        <label>
+            <a href = "dashboard"> <button>Back to Dashboard </button> </a>
+        </label>
+    </form>
+</body>
+</html>

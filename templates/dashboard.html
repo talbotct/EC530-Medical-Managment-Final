@@ -58,54 +58,69 @@
                 </td>
             </tr>
         </table>
+        <table>
+            <tr>
+                <td>
+                    <label>
+                        Your Doctors: {{ doctors }}
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Your Nurses: {{ nurses }}
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Your Patients: {{ patients }}
+                    </label>
+                </td>
+            </tr>
+        </table>
         <div>
+            <h3>Chat Rooms </h3>
             <table>
                 <tr>
                     <td>
-                        <input type = "text" name = "chatPartner" placeholder = "Enter chat partner">
-                    </td>
-                    <td>
-                        <a href = "/connectUser"><button class = "btn"><h3>Connect to User </h3></button></a>
-                        <div>
-                        </div>
+                        <a href = "chatWindow"> <button type = "submit">Enter Chat</button> </a>
                     </td>
                 </tr>
             </table>
         </div>
-        <div>
-            <table>
-                <tr>
-                    <td>
-                        <h3>Chat Window </h3>
-                        <h3>{{chatID}} </h3>
-                        <div>
-                            <table>
-                                <tr>
-                                    <td>
-                                        Sender:
-                                    </td>
-                                    <td>
-                                        Message
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-                <table>
-                    <tr>
-                        <td>
-                            <input type = "text" name = "typedMsg" placeholder = "Enter message...">
-                        </td>
-                        <td>
-                            <button class = "send">Send </button>
-                        </td>               
-                    </tr>
-                </table>
-        </div>
+        <table>
+            <tr>
+                <td>
+                    <label>
+                        <h3>Your Devices: {{ deviceName }}</h3>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Device Type: {{ deviceType }}
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Manufacturer: {{ manufacturer }}
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>
+                        Results: {{ results }}
+                    </label>
+                </td>
+            </tr>
+        </table>
         <label>
             <a href = "logout"> <button>Logout </button> </a>
         </label>
