@@ -34,6 +34,7 @@ Patients
 2. pip install -r /path/to/requirements.txt
 3. Place Google Cloud API key in cloned location
 4. Run app.py to host locally
+5. Go to http://127.0.0.1:5000/ to use web application or make API calls
 
 ## 4. Google Cloud API Setup
 ### Login to Google Cloud Console and Search "Service Accounts"
