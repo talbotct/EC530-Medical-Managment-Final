@@ -1,8 +1,14 @@
 # EC 530 Final Project Medical Managment
 
-Addtional wiki/readme updates to follow soon.
+## Overview
+This project was based on previous work on the creation of an API for managment of a medical platform.  The API and chat implementation was based off these
 
-# Resources
+## User Stories
+
+## Installation
+
+
+## Resources
 RESTful API Info
 https://cloud.google.com/blog/products/application-development/rest-vs-rpc-what-problems-are-you-trying-to-solve-with-your-apis
 
