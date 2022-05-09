@@ -1,7 +1,11 @@
 # EC 530 Final Project Medical Management
 
 ## 1. Overview
-This project was based on previous work on the creation of an API for management of a medical platform.  The API and chat implementation was rooted in these previous projects.  I was able to create a web platform to allow for the creation of user accounts to manage the user medical and device data.  Flask in Python was used in the development of the web application that wraps up these other features.  Google Cloud Platform was used for the database storage as well as the cloud hosting.  These and other features are supported well through this join platform.  Below are the original user stories for the project, the web application was developed with the features in mind.  I believe I was fairly successful in reaching these goals, with some changes in direction during the development process.  Below is also installation instructions, additional documentation can be found on the wiki page.
+This project was based on previous work on the creation of an API for management of a medical platform. The API and chat implementation was rooted in these previous projects.
+
+I was able to create a web platform to allow for the creation of user accounts to manage the user medical and device data. Flask in Python was used in the development of the web application that wraps up these other features. Google Cloud Platform was used for the database storage as well as the cloud hosting. These and other features are supported well through this join platform.
+
+Below are the original user stories for the project, the web application was developed with the features in mind. I believe I was fairly successful in reaching these goals, with some changes in direction during the development process. Below is also installation instructions additional documentation can be found on the wiki page.  If you have any questions please reach out, I would be happy to talk about it!
 
 ## 2. User Stories
 Administrators
