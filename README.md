@@ -1,9 +1,9 @@
 # EC 530 Final Project Medical Management
 
-## Overview
+## 1. Overview
 This project was based on previous work on the creation of an API for management of a medical platform.  The API and chat implementation was rooted in these previous projects.  I was able to create a web platform to allow for the creation of user accounts to manage the user medical and device data.  Flask in Python was used in the development of the web application that wraps up these other features.  Google Cloud Platform was used for the database storage as well as the cloud hosting.  These and other features are supported well through this join platform.  Below are the original user stories for the project, the web application was developed with the features in mind.  I believe I was fairly successful in reaching these goals, with some changes in direction during the development process.  Below is also installation instructions, additional documentation can be found on the wiki page.
 
-## User Stories
+## 2. User Stories
 Administrators
 1. Add users to the system
 2. Assign and Change Roles to users
@@ -29,13 +29,13 @@ Patients
 4. Can view their medical measurements
 
 
-## Installation
+## 3. Installation
 1. Clone repo
 2. pip install -r /path/to/requirements.txt
 3. Place Google Cloud API key in cloned location
 4. Run app.py to host locally
 
-## Google Cloud API Setup
+## 4. Google Cloud API Setup
 ### Login to Google Cloud Console and Search "Service Accounts"
 ![0740d0973f45b075b2fb7e88faad0640](https://user-images.githubusercontent.com/56003386/162986908-44702ce8-ff10-457b-a455-cc87857f0f03.png)
 ### Create or select the service account to use
@@ -45,7 +45,7 @@ Patients
 ### Select and generate a .json version of the key
 ![de34b0d3ab51bf2f72233c5395a28324](https://user-images.githubusercontent.com/56003386/162986983-57d016d8-cc02-406c-a857-1a675c02774d.png)
 
-## Resources
+## 5. Resources
 RESTful API Info
 https://cloud.google.com/blog/products/application-development/rest-vs-rpc-what-problems-are-you-trying-to-solve-with-your-apis
 
