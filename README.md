@@ -52,7 +52,7 @@ https://cloud.google.com/blog/products/application-development/rest-vs-rpc-what-
 API Status Codes
 https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
-Flask Basic API Stucture
+Flask Basic API Structure
 https://flask-restful.readthedocs.io/en/latest/quickstart.html
 
 Full Flask REST Documentation
