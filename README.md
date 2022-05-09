@@ -1,5 +1,7 @@
 # EC 530 Final Project Medical Managment
 
+Addtional wiki/readme updates to follow soon.
+
 # Resources
 RESTful API Info
 https://cloud.google.com/blog/products/application-development/rest-vs-rpc-what-problems-are-you-trying-to-solve-with-your-apis
